@@ -9,3 +9,6 @@ rain = Node(DiscreteDistribution({
 }), name="rain")
 
 #Track maintenance node is conditional on rain
+maintenance = Node(ConditionalProbabilityTable([
+    ["none", "yes", 0.4]
+]))
