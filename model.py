@@ -56,9 +56,3 @@ model.add_edge(train, appointment)
 
 #finalize model
 model.bake
-
-# Example inference
-beliefs = model.predict_proba({
-    "rain": "light",
-    "maintenance": "yes"
-})
